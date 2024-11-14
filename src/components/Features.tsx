@@ -18,7 +18,7 @@ const features = [
   },
   {
     name: 'Ratings & Reviews',
-    description: 'Build trust with verified ratings and reviews',
+    description: 'Establish credibility with authenticated ratings and reviews',
     icon: Star,
   },
 ];
