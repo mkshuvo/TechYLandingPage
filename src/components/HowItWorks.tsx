@@ -1,20 +1,27 @@
-import { UserPlus, Search, Users } from 'lucide-react';
+import * as LucideIcons from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
 
-const steps = [
+interface Step {
+  title: string;
+  description: string;
+  icon: LucideIcon;
+}
+
+const steps: Step[] = [
   {
     title: 'Sign Up',
     description: 'Easy registration for both service providers and clients',
-    icon: UserPlus,
+    icon: LucideIcons.UserPlus,
   },
   {
     title: 'Browse Services',
     description: 'Explore a wide range of professional services',
-    icon: Search,
+    icon: LucideIcons.Search,
   },
   {
     title: 'Connect & Collaborate',
     description: 'Seamlessly connect and start working together',
-    icon: Users,
+    icon: LucideIcons.Users,
   },
 ];
 
@@ -37,7 +44,7 @@ export default function HowItWorks() {
               <div key={step.title} className="relative">
                 {index !== steps.length - 1 && (
                   <div className="hidden lg:block absolute top-12 right-0 w-full">
-                    <div className="h-0.5 bg-primary-500/30 relative">
+                    <div className="bg-primary-500/30 relative">
                       <div className="absolute right-0 -mt-1 h-3 w-3 rounded-full bg-primary-500" />
                     </div>
                   </div>
